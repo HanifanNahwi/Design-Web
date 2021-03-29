@@ -1,0 +1,22 @@
+.kotak {
+    background: blue;
+    width: 250px;
+    height: 250px;
+    padding-left: 200px;
+}
+
+p.dotted {border-style: dotted;border-color: crimson;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+
+.gambar {
+    width: 150px;
+    float: left;
+    margin-right: 50px;
+}
