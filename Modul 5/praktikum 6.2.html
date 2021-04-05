@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Praktikum 6.2</title>
+        <style>
+            div {
+                text-align: center;
+            }
+            #box1 {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 50px;
+                margin-left: 10px;
+                background: #00ffab;
+                z-index: -10;
+            }
+            #box11 {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 50px;
+                margin-left: 200px;
+                background: #00ffab;
+                z-index: 1;
+            }
+            #box2 {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 120px;
+                left: 30px;
+                background: #00aeff;
+                z-index: -9;
+            }
+            #box22 {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 120px;
+                left: 195px;
+                background: #00aeff;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>
+                Latihan Belajar CSS z-index
+            </p>
+        </div>
+        <div>
+            <p id="box1">Box1</p>
+            <p id="box2">Box2</p>
+        </div>
+        <div>
+            <p id="box11">Box1.1</p>
+            <p id="box22">Box2.1</p>
+        </div>
+        <div>
+            <p id="box11">Box1.1</p>
+            <p id="box22">Box2.1</p>
+        </div>
+    </body>
+</html>
