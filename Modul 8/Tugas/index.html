@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>WEB DENGAN JAVASCRIPT</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="images/bg.png">
+        <div class="all">
+            <div class="navigasi">
+                <font class="tulis"><center>Tugas Membuat Web</center></font>
+                </div>
+            </div>
+
+            <div class="head">
+                <center><h1 class="judul"></h1></center>
+                <p class="tulis"><center>Hanifan Nahwi Ibrohim</center></p>
+            </div>
+
+            <div class="navigasi">
+                <font class="tulis"><center>K3520033</center></font>
+            </div>
+            
+            <div class="main">
+                <div class="content">
+                    <div id="table-price" class="clear">
+                        <div class="plan">
+                            <h3><b>Hanifan</b><span><img src="images/logo.png" width="150px"></span></h3>
+                            <a class="masuk">K3520033</a>
+                            <ul>
+                                <li><b>Nama</b> Hanifan Nahwi I</li>
+                                <li><b>TTL</b> Sukoharjo, 20 April 2002</li>
+                                <li><b>Hobby</b> Berenang</li>
+                                <li><b>NO. HP</b> 081234567899</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan">
+                            <h3><b>Hanifan</b><span><img src="images/logo.png" width="150px"></span></h3>
+                            <a class="masuk">K3520033</a>
+                            <ul>
+                                <li><b>Nama</b> Hanifan Nahwi I</li>
+                                <li><b>TTL</b> Sukoharjo, 20 April 2002</li>
+                                <li><b>Hobby</b> Berenang</li>
+                                <li><b>NO. HP</b> 081234567899</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan">
+                            <h3><b>Hanifan</b><span><img src="images/logo.png" width="150px"></span></h3>
+                            <a class="masuk">K3520033</a>
+                            <ul>
+                                <li><b>Nama</b> Hanifan Nahwi I</li>
+                                <li><b>TTL</b> Sukoharjo, 20 April 2002</li>
+                                <li><b>Hobby</b> Berenang</li>
+                                <li><b>NO. HP</b> 081234567899</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan">
+                            <h3><b>Hanifan</b><span><img src="images/logo.png" width="150px"></span></h3>
+                            <a class="masuk">K3520033</a>
+                            <ul>
+                                <li><b>Nama</b> Hanifan Nahwi I</li>
+                                <li><b>TTL</b> Sukoharjo, 20 April 2002</li>
+                                <li><b>Hobby</b> Berenang</li>
+                                <li><b>NO. HP</b> 081234567899</li>
+                            </ul>
+                        </div>
+
+                        <br><br>
+                        <div class="lol2">
+                        <br><br>
+                            <button onclick="playPause()">Play/Pause</button>
+                            <button onclick="makeBig()">Big</button>
+                            <button onclick="makeSmall()">Small</button>
+                            <button onclick="makeNormal()">Normal</button>
+                        <br><br>
+                            <video id="video1" width="420">
+                                <source src="images/video.mkv" type="video/mkv">
+                                    Your Browser does not support HTML5 video.
+                            </video>
+                        </div>
+
+                        <script lang="javascript">
+                            var myVideo = document.getElementById("video1");
+
+                            function playPause(){
+                                if (myVideo.paused)
+                                    myVideo.play();
+                                else
+                                    myVideo.pause();
+                            }
+
+                            function makeBig(){
+                                    myVideo.width = 560;
+                            }
+
+                            function makeSmall(){
+                                    myVideo.width = 320;
+                            }
+
+                            function makeNormal(){
+                                    myVideo.width = 420;
+                            }
+                        </script>
+                </div>
+                </div>
+                
+                <div class="widget">
+                    <script>
+                        function validateForm(){
+                            var x = document.forms["myForm"]["fname"].value;
+                            if (x == ""){
+                                alert("Name must be filles out");
+                            return false;
+                            }
+                        }
+                    </script>
+
+                    <center><div id="clockDisplay" class="clockStyle"></div></center>
+                    <br><br>
+                    <script type="text/javascript" lang="javascript">
+                        function renderTime(){
+                            var currentTime = nowDate();
+                            var h = currentTime.getHours();
+                            var m = currentTime.getMinutes();
+                            var s = currentTime.getSeconds();
+                                if (h == 0){
+                                    h = 24;
+                                }
+                                if (h < 10){
+                                    h = "0" + h;
+                                }
+
+                                if (m < 10){
+                                    m = "0" + m;
+                                }
+                                if (s < 10){
+                                    s = "0" + s;
+                                }
+                            var myClock = document.getElementById('clockDisplay');
+                            myClock.textContent = h + ":" + m + ":" + s + "";
+                            setTimeout('renderTime()',1000);
+                        }
+                        renderTime();
+                    </script>
+                    <br><br>
+
+                    <img id="myImage" src="images/konten3.png" style="width: 250px">
+                    <br>
+                    <center>
+                        <br><button onclick="document.getElementById('myImage').src='images/konten3.png'">Laptop</button>
+                        <button onclick="document.getElementById('myImage').src='images/konten2.png'">Komputer</button>
+                    </center>
+                    <br><Br><br><br>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
